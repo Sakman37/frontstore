@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from "react-bootstrap";
 import { PersonCircle } from "react-bootstrap-icons";
 
@@ -68,10 +68,11 @@ const Navbar: React.FC = () => {
             </li>
             {!usuarioAutenticado ? (
               <li className="nav-item">
-                <Button variant="outline-light" as={Link} to="/login">
-                  <PersonCircle size={30} /> 
-                </Button>
-              </li>
+              <Link to="/login" className="btn btn-outline-light">
+                <PersonCircle size={30} />
+              </Link>
+            </li>
+            
             ) : (
               <li className="nav-item">
                 <Button variant="outline-danger" onClick={cerrarSesion}>

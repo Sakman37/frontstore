@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 import "../styles/basquet.css";
 
 import { CreditCard, Truck } from "lucide-react";
@@ -58,7 +58,7 @@ const Basquet: React.FC = () => {
     cvv: ""
   });
   const [metodoPago, setMetodoPago] = useState<string>("");
-  const navigate = useNavigate();
+  
   const token = localStorage.getItem("token");
 
   useEffect(() => {
