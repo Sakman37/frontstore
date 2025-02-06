@@ -1,0 +1,103 @@
+/* Estilos generales */
+body, .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 3vh; /* Asegura que la página ocupe toda la altura de la ventana */
+}
+
+
+.container-no {
+  width: 100vw;  /* Ocupa todo el ancho de la pantalla */
+  height: 100vh; /* Ocupa todo el alto de la pantalla */
+  margin: auto;
+  padding: 40px; /* Espaciado interno para que el texto no se pegue */
+  border-radius: 0;
+  border-color: transparent;
+  justify-content: center;
+  align-items: center; /* Centra el contenido */
+  box-sizing: border-box; /* Evita que el padding aumente el tamaño total */
+  text-align: center; /* Asegura que el texto esté centrado */
+  overflow-y: auto;
+}
+
+
+/* Estilos para el carrito */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 0;
+  border-color: transparent;
+  overflow-y: auto;
+}
+
+.bg-white {
+  background-color: transparent !important;
+  border: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  border-color: transparent;
+}
+
+.rounded-lg {
+  border-radius: 12px;
+}
+
+.shadow {
+  box-shadow: none;
+}
+
+.text-gray-800 {
+  color: #000000;
+}
+
+.text-blue-600 {
+  color: #4A90E2;
+}
+
+.bg-blue-600 {
+  background-color: #4A90E2;
+}
+
+.bg-blue-600:hover {
+  background-color: #357ABD;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.1);
+  border: transparent;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 0;
+  border-color: transparent;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+input:focus {
+  outline: none;
+  border-color: #4A90E2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.imagen-producto {
+  max-width: 10000px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  margin-top: auto; /* Esto asegura que el footer siempre esté al final */
+}
+footer {
+  display: block;
+}
+
+footer + footer {
+  display: none;
+}

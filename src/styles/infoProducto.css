@@ -1,0 +1,186 @@
+html, body {
+  min-height: 100vh;
+  height: auto;
+}
+/* Modern, clean design with improved responsiveness */
+/* Modern, clean design with improved responsiveness */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color: #333;
+  --background-color: #f4f6f7;
+  --hover-color: #2980b9;
+}
+
+.info-producto-container {
+  margin-top: 40px;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.info-producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 30px;
+  background-color: white;
+}
+
+/* Rest of the CSS remains exactly the same */
+
+.info-producto-detalles button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 30px; /* Increased margin to create more space */
+  font-size: 1.2rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.info-producto-detalles p:last-child {
+  margin-top: 30px; /* Increased space for description */
+  padding-top: 20px;
+  border-top: 1px solid #eee; /* Subtle separator line */
+}
+
+/* Remaining CSS stays the same as in the original stylesheet */
+
+
+.info-producto-imagen img {
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.info-producto-imagen:hover img {
+  transform: scale(1.1);
+}
+
+.lupa-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.info-producto-imagen:hover .lupa-icon {
+  opacity: 1;
+}
+
+.info-producto-detalles {
+  flex: 1;
+  max-width: 500px;
+}
+
+.info-producto-detalles h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 10px;
+}
+
+.info-producto-detalles p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.info-producto-detalles label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.info-producto-detalles input,
+.info-producto-detalles select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.info-producto-detalles button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.info-producto-detalles button:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mensaje-exito {
+  color: #28a745;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .info-producto {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .info-producto-imagen img {
+    max-width: 100%;
+  }
+
+  .info-producto-detalles {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .info-producto-detalles input,
+  .info-producto-detalles select,
+  .info-producto-detalles button {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-producto-detalles h2 {
+    font-size: 2rem;
+  }
+
+  .info-producto-detalles p {
+    font-size: 1rem;
+  }
+}

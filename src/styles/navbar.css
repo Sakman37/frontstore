@@ -1,0 +1,342 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para la barra de navegación */
+  .navbar {
+    background-color: #000000 !important;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease-in-out;
+    
+  }
+  
+  .navbar .container-fluid {
+    background-color: #000 !important;
+    padding: 0;
+  }
+  
+  .navbar-brand img {
+    max-width: 80px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-brand img:hover {
+    transform: scale(1.1);
+  }
+  
+  .navbar-nav .nav-link {
+    color: #f8f9fa !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 20px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffd700;
+    background-color: rgba(255, 215, 0, 0.2);
+    transform: scale(1.05);
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-toggler:hover {
+    background-color: #ffd700;
+  }
+  
+  .navbar-collapse {
+    background-color: #000000;
+    padding-top: 10px;
+  }
+  
+  .navbar-nav-scroll {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  .nav-item {
+    margin: 5px 0;
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #ffffff !important;
+  }
+  
+
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .card-body {
+        padding: 15px;
+    }
+  
+    .formularioReserva {
+        padding: 15px;
+    }
+  
+    .btn {
+        padding: 10px 18px;
+    }
+  }
+  
+  /* Estilos generales del sitio */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  /* Estilo del título de bienvenida */
+  .welcome-title {
+    font-size: 3em;          /* Tamaño grande del texto */
+    font-weight: bold;
+    color: black;             /* Color oscuro para el texto */
+    text-transform: uppercase; /* Hacer el texto en mayúsculas */
+    letter-spacing: 2px;     /* Espaciado entre letras */
+  }
+  
+  .welcome-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .carousel-container {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro se apilen verticalmente */
+    justify-content: flex-start; /* Alinea el contenido desde la parte superior */
+    align-items: center;  /* Centra horizontalmente */
+    height: 60vh;  /* Reducir la altura del carrusel al 60% de la ventana */
+    width: 80%;    /* Ajustar el ancho, 80% de la pantalla */
+    margin: 70px auto;  /* Margen superior e inferior para separarlo de los elementos de arriba y abajo */
+    overflow: hidden; /* Esto evita que las imágenes se desborden fuera del contenedor */
+    position: relative; /* Necesario si decides posicionar otros elementos dentro del contenedor */
+  }
+  
+  
+  
+  /* Estilo de la imagen dentro del carrusel */
+  .carousel-img {
+    object-fit: cover; /* Asegura que la imagen se cubra sin deformarse */
+    height: auto;      /* Fija la altura de la imagen al 100% del contenedor */
+    width: 100%;       /* Asegura que la imagen ocupe todo el ancho disponible */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: none; 
+    transition: none;
+    
+  }
+  
+  /* Estilo de los elementos del carrusel */
+  .carousel-item {
+    width: 100%;  /* Asegura que el ancho de cada elemento no cambie */
+    height: 100%; /* Fija la altura del elemento para que no cambie con las imágenes */
+  }
+  
+  /* Sección "Conócenos" */
+  
+  .section-content {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 70px 0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  
+  .section-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+  }
+  
+  .btn-main {
+    font-size: 1.1rem;
+    padding: 12px 40px;
+    border-radius: 25px;
+    background-color: #000000;
+    border: none;
+    color: #000000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-main:hover {
+    background-color: #000000;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .carousel-img {
+        height: 300px;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .section-text {
+        font-size: 1rem;
+    }
+  }
+  /* Zona de Reserva - Título */
+  .zonaReserva {
+    margin-top: 100px; /* Espacio debajo del navbar */
+    text-align: center; /* Centrado del texto */
+  }
+  
+  .zonaReserva h1 {
+    font-size: 2.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    color: #3498db; /* Azul profesional */
+    text-transform: uppercase; /* Texto en mayúsculas */
+  }
+  
+  /* Estilos generales del contenedor */
+  .admin-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* Encabezado */
+  .admin-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .admin-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  /* Tarjetas */
+  .admin-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .admin-card-header {
+    background: #3498db;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .admin-card-header h5 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  
+  .admin-status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  
+  .admin-status.reservada {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  .admin-status.aceptada {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  .admin-card-body {
+    padding: 20px;
+  }
+  
+  .admin-card-actions {
+    padding: 15px;
+    background: #f7f9fa;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .admin-card-actions .btn {
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  .no-reservas {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.25rem;
+    margin-top: 50px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .custom-btn {
+    background-color: #000; /* Fondo negro */
+    color: #000000; /* Texto blanco */
+  }
+  
+  .custom-btn:hover {
+    background-color: #333; /* Fondo negro oscuro al pasar el ratón */
+  }
+  
+  
+  
+  .toggle-login-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .toggle-login-button:hover {
+    background-color: #45a049;
+  }
+  
+  .enlaces-text{
+    font-size: 1.0rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    color: #3498db; /* Azul profesional */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    color: white;
+  }

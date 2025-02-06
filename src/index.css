@@ -1,0 +1,98 @@
+/* Aplica un estilo base para toda la web */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asegurar que el contenido no se desborde */
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedores flexibles */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Imágenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tipografía adaptable */
+h1, h2, h3, h4, h5, h6 {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+/* Botones responsivos */
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+/* Formularios responsivos */
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Grid general para la estructura */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  /* Cambia de columnas a filas en layouts */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ajusta tamaños de botones */
+  button {
+    width: 100%;
+  }
+}
+
+.page-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}

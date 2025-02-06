@@ -1,0 +1,113 @@
+html, body {
+  min-height: 100vh;
+  height: auto;
+}
+
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-form input,
+.product-form textarea,
+.product-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.product-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 15px 0;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #000;
+  color: #fff;
+}
+
+tr:hover td {
+  background: #f5f5f5;
+}
+
+.toggle-header {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.toggle-header:hover {
+  background: #333;
+}
+
+.section-content {
+  margin-top: 20px;
+}
+
+footer {
+  display: block;
+}
+
+footer + footer {
+  display: none;
+}
