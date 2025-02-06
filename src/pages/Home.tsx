@@ -21,10 +21,11 @@ const Home: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const banners = [
-    "/src/pages/banner1.jpg",
-    "/src/pages/banner2.jpg",
-    "/src/pages/banner3.jpg"
+    "/banner1.jpg",
+    "/banner2.jpg",
+    "/banner3.jpg"
   ];
+  
 
   useEffect(() => {
     axios.get("https://backstore-nirr.onrender.com/api/products").then((response) => {
