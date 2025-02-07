@@ -4,7 +4,7 @@ import { jwtDecode } from "jwt-decode";
 
 interface PrivateRouteProps {
   element: JSX.Element;
-  isAdminRequired?: boolean;  // Para indicar si el admin es requerido
+  isAdminRequired?: boolean;  // wawa
 }
 
 const PrivateRoute: React.FC<PrivateRouteProps> = ({ element, isAdminRequired = false }) => {

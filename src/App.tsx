@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion"; // Aquí importamos Framer Motion
+import { AnimatePresence, motion } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -8,13 +8,13 @@ import Login from "./pages/Login";
 import Contact from "./pages/Contac";
 import AdminPanel from "./pages/AdminPanel";
 import InfoProducto from "./pages/infoproducto";
-import Basquet from "./pages/Basquet";  // Asegúrate de tener este componente.
-import PrivateRoute from "./pages/PrivateRoute";  // Importa PrivateRoute
+import Basquet from "./pages/Basquet";  
+import PrivateRoute from "./pages/PrivateRoute";  
 
 const App: React.FC = () => {
   return (
     <>
-      <AnimatePresence mode="wait"> {/* Cambiar exitBeforeEnter por mode="wait" */}
+      <AnimatePresence mode="wait"> {/* */}
         <Routes>
           {/* Ruta para login */}
           <Route
@@ -22,7 +22,7 @@ const App: React.FC = () => {
             element={
               <motion.div
                 key="login"
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 1 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
