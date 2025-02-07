@@ -106,7 +106,7 @@ const Home: React.FC = () => {
                 />
               ))
             ) : (
-              <p className="no-results">Cargando productos... Tarda entre 20-40 debido a el delay entre azure y render.</p>
+              <p className="no-results">Cargando productos... Tarda entre 20-40 debido a el delay entre azure y render, Recargar pagina mientras espera el tiempo.</p>
             )}
           </div>
         </div>
